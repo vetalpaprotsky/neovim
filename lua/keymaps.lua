@@ -49,7 +49,7 @@ keymap("v", "p", '"_dP', opts)
 keymap("t", "<C-n>", "<C-\\><C-n>", opts)
 
 -- Open terminal in terminal mode right away.
-keymap("n", "<leader>tt", ":term<CR> :startinsert<CR>", opts)
+keymap("n", "<leader>to", ":term<CR> :startinsert<CR>", opts)
 
 -- Delete current buffer.
 keymap("n", "<leader>bb", ":bd<CR>", opts)
