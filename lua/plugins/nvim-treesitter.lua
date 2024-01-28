@@ -1,7 +1,5 @@
 return {
-  {
-    "RRethy/nvim-treesitter-endwise"
-  },
+  { "RRethy/nvim-treesitter-endwise" },
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
