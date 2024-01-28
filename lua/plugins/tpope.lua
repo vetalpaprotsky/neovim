@@ -10,6 +10,9 @@ return {
       vim.keymap.set("n", "<leader>tl", ":TestLast<CR>", opts)
       vim.keymap.set("n", "<leader>tv", ":TestVisit<CR>", opts)
       vim.keymap.set("n", "<leader>tt", ":A<CR>", opts) -- From vim-rails plugin.
+
+      vim.cmd([[let test#strategy = "neovim_sticky"]])
+      vim.cmd([[let g:test#neovim_sticky#start_normal = 1]])
     end,
   },
 }
