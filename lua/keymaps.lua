@@ -21,19 +21,11 @@ vim.g.maplocalleader = " "
 -- keymap("n", "<C-k>", "<C-w>k", opts)
 -- keymap("n", "<C-l>", "<C-w>l", opts)
 
--- Resize with arrows.
-keymap("n", "<C-Up>", ":resize -2<CR>", opts)
-keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
-
--- Navigate buffers.
-keymap("n", "¬", ":bnext<CR>", opts) -- ALT + l on Mac.
-keymap("n", "˙", ":bprevious<CR>", opts) -- ALT + h on Mac.
-
--- Move line up and down.
-keymap("n", "∆", ":m+1<CR>", opts) -- ALT + j on Mac.
-keymap("n", "˚", ":m-2<CR>", opts) -- ALT + k on Mac.
+-- Resize windows.
+keymap("n", "∆", ":resize -2<CR>", opts) -- ALT + j on Mac.
+keymap("n", "˚", ":resize +2<CR>", opts) -- ALT + k on Mac.
+keymap("n", "¬", ":vertical resize -2<CR>", opts) -- ALT + l on Mac.
+keymap("n", "˙", ":vertical resize +2<CR>", opts) -- ALT + h on Mac.
 
 -- Press jk fast to exit insert mode.
 keymap("i", "jk", "<ESC>", opts)
@@ -57,3 +49,6 @@ keymap("n", "<leader>bb", ":bd<CR>", opts)
 keymap("n", "<leader>bd", ":bd!<CR>", opts)
 -- Delete all buffers.
 keymap("n", "<leader>bad", ":%bd<CR>", opts)
+
+-- Turn off search highlighting.
+keymap("n", "<leader>h", ":noh<CR>", opts)
