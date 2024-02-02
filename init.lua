@@ -15,3 +15,9 @@ require("keymaps")
 require("options")
 require("lazy").setup("plugins")
 require("diagnostic") -- Must be required after loading plugins.
+
+-- Remove trailing white spaces on save.
+vim.cmd([[autocmd BufWritePre * :%s/\s\+$//e]])
+
+-- Remove number line in terminal mode.
+vim.cmd([[autocmd TermOpen * setlocal nonumber norelativenumber]])
