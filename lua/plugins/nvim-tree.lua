@@ -8,6 +8,7 @@ return {
       disable_netrw = true,
       view = {
         adaptive_size = true,
+        side = "right",
       },
       actions = {
         open_file = {
