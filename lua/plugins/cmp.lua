@@ -13,10 +13,12 @@ return {
     config = function()
       local cmp = require("cmp")
 
-      -- Adds VSCode like snippents from friendly-snippets plugin.
+      -- Adds VSCode like snippets from friendly-snippets plugin.
       require("luasnip.loaders.from_vscode").lazy_load()
-      -- Adds rails snippents from friendly-snippets plugin.
+      -- Adds rails snippets from friendly-snippets plugin to ruby files.
       require("luasnip").filetype_extend("ruby", { "rails" })
+      -- Adds html snippets from friendly-snippets plugin to eruby files.
+      require("luasnip").filetype_extend("eruby", { "html" })
 
       cmp.setup({
         snippet = {
