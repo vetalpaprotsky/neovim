@@ -21,3 +21,6 @@ vim.cmd([[autocmd BufWritePre * :%s/\s\+$//e]])
 
 -- Remove number line in terminal mode.
 vim.cmd([[autocmd TermOpen * setlocal nonumber norelativenumber]])
+
+-- Enable copilot.
+vim.cmd([[Copilot enable]])

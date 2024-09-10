@@ -52,3 +52,12 @@ keymap("n", "<leader>bad", ":%bd<CR>", opts)
 
 -- Turn off search highlighting.
 keymap("n", "<leader>h", ":noh<CR>", opts)
+
+-- Complete Copilot suggestion.
+keymap(
+  "i",
+  "<Right>",
+  'copilot#Accept("\\<CR>")',
+  { expr = true, replace_keycodes = false }
+)
+vim.g.copilot_no_tab_map = true
