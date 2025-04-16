@@ -47,6 +47,7 @@ keymap("n", "<leader>to", ":term<CR> :startinsert<CR>", opts)
 keymap("n", "<leader>bb", ":bd<CR>", opts)
 -- Delete current buffer even if it's not safed.
 keymap("n", "<leader>bd", ":bd!<CR>", opts)
+keymap("n", "<C-;>c",     ":bd!<CR>", opts) -- Zed
 -- Delete all buffers.
 keymap("n", "<leader>bad", ":%bd<CR>", opts)
 

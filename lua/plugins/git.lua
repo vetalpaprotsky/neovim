@@ -6,9 +6,8 @@ return {
     config = function()
       require("gitsigns").setup()
 
-      vim.keymap.set("n", "<leader>gv", ":Gitsigns preview_hunk<CR>", opts)
-      vim.keymap.set("n", "<leader>gn", ":Gitsigns next_hunk<CR>", opts)
-      vim.keymap.set("n", "<leader>gp", ":Gitsigns prev_hunk<CR>", opts)
+      vim.keymap.set("n", "<leader>gh", ":Gitsigns next_hunk<CR>", opts)
+      vim.keymap.set("n", "<leader>gH", ":Gitsigns prev_hunk<CR>", opts)
       vim.keymap.set("n", "<leader>gd", ":Gitsigns diffthis<CR>", opts)
       vim.keymap.set("n", "<leader>gr", ":Gitsigns reset_hunk<CR>", opts)
       vim.keymap.set("n", "<leader>gs", ":Gitsigns stage_hunk<CR>", opts)

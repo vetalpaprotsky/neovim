@@ -19,6 +19,7 @@ return {
 
     local opts = { noremap = true, silent = true }
     vim.api.nvim_set_keymap("n", "<leader>ee", ":NvimTreeFindFileToggle<CR>", opts)
+    vim.api.nvim_set_keymap("n", "<C-;>ee",    ":NvimTreeFindFileToggle<CR>", opts) -- Zed
     vim.api.nvim_set_keymap("n", "<leader>ec", ":NvimTreeCollapse<CR>", opts)
   end,
 }

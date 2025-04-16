@@ -27,7 +27,9 @@ return {
 
       local opts = { noremap = true, silent = true }
       vim.keymap.set("n", "<leader>ff", tel_find_files, opts)
+      vim.keymap.set("n", "<D-p>",      tel_find_files, opts) -- Zed
       vim.keymap.set("n", "<leader>fg", tel_live_grep, opts)
+      vim.keymap.set("n", "<S-D-f>",    tel_live_grep, opts) -- Zed
       vim.keymap.set("n", "<leader>fb", tel_buffers, opts)
       vim.keymap.set("n", "<leader>fr", tel_lsp_references, opts)
       vim.keymap.set("n", "<leader>ft", tel_grep_string, opts)
